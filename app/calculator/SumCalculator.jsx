@@ -2,13 +2,13 @@
 import { useState } from "react";
 
 export default function SumCalculator() {
-  const [firstNumber, setFirstNumber] = useState(null);
-  const [secondNumber, setSecondNumber] = useState(null);
+  const [firstNumber, setFirstNumber] = useState(0);
+  const [secondNumber, setSecondNumber] = useState(0);
   const sum = firstNumber + secondNumber;
 
   const handleReset = () => {
-    setFirstNumber(null);
-    setSecondNumber(null);
+    setFirstNumber(0);
+    setSecondNumber(0);
   };
 
   return (
